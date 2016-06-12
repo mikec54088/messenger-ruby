@@ -15,6 +15,7 @@ module Messenger
       )
     rescue RestClient::ExceptionWithResponse => err
       puts "\nFacebook API response from invalid request:\n#{err.response}\n\n"
+      err
     end
   end
 end
